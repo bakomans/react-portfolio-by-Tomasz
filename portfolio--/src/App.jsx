@@ -1,6 +1,9 @@
 import Nav from "./Components/Nav";
 import About from "./Components/About";
-import Banner from "./Components/Banner"
+import Banner from "./Components/Banner";
+import Stack from "./Components/Stack";
+import Project from "./Components/Project";
+
 
 
 const App = () => {
@@ -11,6 +14,8 @@ const App = () => {
         <Nav/>
         <Banner/>
         <About/>
+        <Stack/>
+        <Project/>
 
         
       </div>

@@ -11,3 +11,10 @@
 .img_glow {
   box-shadow: 0 0 35px rgb(247, 0, 255);
 }
+.neno-button {
+    transform: all 0.7s ease-in-out;
+    box-shadow: 0 0 10px rgb(247, 0, 255);
+}
+.b_glow {
+  box-shadow: 0 0 15px rgb(247, 0, 255);
+}
