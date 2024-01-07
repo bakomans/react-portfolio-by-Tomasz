@@ -18,8 +18,8 @@ const About = () => {
       delay: 0,
       duration: 1000,
     });
-    AOS.refresh(); // Dodaj tę linijkę, aby odświeżyć animacje po zmianie zawartości
-  }, []); // [] oznacza, że useEffect zostanie uruchomiony tylko raz, po zamontowaniu komponentu
+    AOS.refresh(); 
+  }, []); 
 
   return (
     <div id="About" className="lg:px-56 px-10 lg:py-0 py-20 text-center lg:gap-5 lg-text-start flex lg:flex-row flex-col-revrse justify-between lg:gap-28 items-center">
