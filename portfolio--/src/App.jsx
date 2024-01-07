@@ -1,5 +1,7 @@
 import Nav from "./Components/Nav";
-import Banner from "./Components/Banner";
+import About from "./Components/About";
+import Banner from "./Components/Banner"
+
 
 const App = () => {
   return (
@@ -8,6 +10,7 @@ const App = () => {
       <div className="bg-slate-900">
         <Nav/>
         <Banner/>
+        <About/>
 
         
       </div>
