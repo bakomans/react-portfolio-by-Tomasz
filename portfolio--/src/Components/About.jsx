@@ -18,11 +18,14 @@ const About = () => {
       delay: 0,
       duration: 1000,
     });
-    AOS.refresh(); 
-  }, []); 
+    AOS.refresh();
+  }, []);
 
   return (
-    <div id="About" className="lg:px-56 px-10 lg:py-0 py-20 text-center lg:gap-5 lg-text-start flex lg:flex-row flex-col-revrse justify-between lg:gap-28 items-center">
+    <div
+      id="About"
+      className="lg:px-56 px-10 lg:py-0 py-20 text-center lg:gap-5 lg-text-start flex lg:flex-row flex-col-revrse justify-between lg:gap-28 items-center"
+    >
       <div className="bg-white rounded-full p-4 shadow-md border-4 border-purple-800 transform transition-transform 0.4s ease-in-out hover:scale-105 img_glow">
         <img
           data-aos="fade-up"
@@ -41,13 +44,14 @@ const About = () => {
           <span className="text-purple-500">About </span> Me
         </h1>
         <p data-aos="fade-left">
-          "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat. Duis aute irure dolor in
-          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-          culpa qui officia deserunt mollit anim id est laborum."
+          "Hi there! My name is Tomasz, and I'm a 35-year-old aspiring Front-End
+          Developer with a passion for creating beautiful and responsive web
+          applications. I've completed various front-end courses and even
+          participated in a front-end bootcamp to enhance my skills. I find joy
+          in bringing designs to life and crafting user-friendly interfaces. My
+          journey into web development has been exciting, and I'm always eager
+          to learn and explore new technologies to stay on top of the
+          ever-evolving world of web development. "
         </p>
         <div className="flex mt-8 gap-2">
           <div className="flex items-center space-x-2">
@@ -65,4 +69,3 @@ const About = () => {
 };
 
 export default About;
-
