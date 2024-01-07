@@ -1,6 +1,11 @@
 import React, { useEffect } from 'react';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import { SiGithub } from 'react-icons/si';
+import img1 from '../assets/image.png';
+import img2 from '../assets/pro2.png';
+import img3 from '../assets/pro3.png';
+import img4 from '../assets/pro4.png';
 
 const Projects = () => {
     useEffect(() => {
@@ -12,20 +17,44 @@ const Projects = () => {
     }, []);
 
     return (
-        <div id="Projects" className="p-20 flex flex-col items-center justify-center">
-            <h1 data-aos='fade-right' className='text-[53px] font-semibold mb-20 leading-normal uppercase text-purple-500'>
-                <span className='text-white'>My Projects</span>
-            </h1>
-            <div className='grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 justify-around gap-20'>
-                <img data-aos='zoom-in' data-aos-delay='600' className='rounded-lg h-36 w-44 border-2 border-purple-600 b_glow' src="path/to/project-image-4.jpg" alt="Project 4" />
-                <img data-aos='zoom-in' data-aos-delay='400' className='rounded-lg h-36 w-44 border-2 border-purple-600 b_glow' src="path/to/project-image-3.jpg" alt="Project 3" />
-                <img data-aos='zoom-in' data-aos-delay='200' className='rounded-lg h-36 w-44 border-2 border-purple-600 b_glow' src="path/to/project-image-2.jpg" alt="Project 2" />
-                <img data-aos='zoom-in' className='rounded-lg h-36 w-44 border-2 border-purple-600 b_glow' src="path/to/project-image-1.jpg" alt="Project 1" />
-                {/* Dodaj kolejne obrazy dla innych projektów */}
+        <div id="Projects" className="p-8 md:p-20 flex flex-col items-center justify-center">
+            <div data-aos='fade-right' className='text-2xl md:text-[53px] font-semibold mb-8 md:mb-20 leading-normal uppercase text-purple-500'>
+                My <span className='text-white'>Projects</span>
+            </div>
+            <div className="mt-12 text-center">
+                <h2 className="text-xl font-semibold mb-4 text-purple-500" data-aos='fade-up'>Interaction with Projects</h2>
+                <p className="text-gray-600 p-8 text-white" data-aos='fade-up'>Explore and interact with my projects! Check them out on GitHub and let me know what you think!</p>
+            </div>
+            <div className='grid md:grid-cols-2 grid-cols-1 gap-8 md:gap-20'>
+                {[
+                    { img: img1, title: 'Foodie Mate', description: 'Please find this project on github.', link: 'https://github.com/bakomans/restaurant-explorer-By-Group-8' },
+                    { img: img2, title: 'Calculator', description: 'Please find this project on github', link: 'https://github.com/bakomans/project_calc_for_portfolio' },
+                    { img: img3, title: 'Scheduler', description: 'Please find this project on github', link: 'https://github.com/bakomans/Dynamic-Calendar-is-amazing' },
+                    { img: img4, title: 'Weather App', description: 'Please find this project on github', link: 'https://github.com/bakomans/weather-app-by-bakomans-' },
+                ].map((project, index) => (
+                    <div key={index} data-aos='zoom-in' data-aos-delay={index * 200} className='relative overflow-hidden rounded-lg b_glow2 group mb-8 md:mb-0'>
+                        <img className='w-full h-44 md:h-72 object-cover transform transition-transform group-hover:scale-105' src={project.img} alt={project.title} />
+                        <div className='absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity'>
+                            <div className='text-center'>
+                                <h2 className='text-lg font-semibold text-purple-800 mb-2'>{project.title}</h2>
+                                <p className='text-gray-600'>{project.description}</p>
+                            </div>
+                        </div>
+                        <a href={project.link} target="_blank" rel="noopener noreferrer" className="absolute bottom-0 left-0 right-0 p-2 text-center text-purple-500 hover:underline bg-white bg-opacity-75">View on GitHub</a>
+                    </div>
+                ))}
+            </div>
+            <div className="mt-12 text-center">
+                <p className="text-lg text-white mb-2">Find more projects on my GitHub:</p>
+                <a href="https://github.com/bakomans" target="_blank" rel="noopener noreferrer" className="text-purple-500 hover:underline">
+                    <SiGithub className="text-4xl inline-block" data-aos='fade-up' />
+                </a>
             </div>
         </div>
     );
 };
 
 export default Projects;
+
+
 
