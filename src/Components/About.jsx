@@ -1,6 +1,8 @@
+/* eslint-disable react/no-unescaped-entities */
+/* eslint-disable no-unused-vars */
 import React, { useEffect } from "react";
 import img from "../assets/reaxt from pexel.jpg";
-import resumePdf from "../assets/tomasz-CV (1).pdf";
+import resumePdf from "../assets/Tomasz CV.pdf";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
@@ -8,7 +10,7 @@ const About = () => {
   const handleDownloadResume = () => {
     const link = document.createElement("a");
     link.href = resumePdf;
-    link.download = "tomasz-CV (1)";
+    link.download = "Tomasz CV";
     link.click();
   };
 
@@ -24,7 +26,7 @@ const About = () => {
   return (
     <div
       id="About"
-      className="lg:px-56 px-10 lg:py-0 py-20 text-center lg:gap-5 lg-text-start flex lg:flex-row flex-col-revrse justify-between lg:gap-28 items-center"
+      className="lg:px-56 px-10 lg:py-0 py-20 text-center lg:gap-5 lg-text-start flex lg:flex-row flex-col-reverse justify-between lg:gap-28 items-center"
     >
       <div className="bg-white rounded-full p-4 shadow-md border-4 border-purple-800 transform transition-transform 0.4s ease-in-out hover:scale-105 img_glow">
         <img
