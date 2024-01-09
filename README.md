@@ -52,4 +52,5 @@ ScrollSpy Navigation: Navigation automatically highlights the current section wh
 This project is licensed under the MIT License. 
 ## Links:
 https://github.com/bakomans/react-portfolio-by-Tomasz 
+
 https://bakomans.github.io/react-portfolio-by-Tomasz/
