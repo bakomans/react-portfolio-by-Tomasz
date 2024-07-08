@@ -2,7 +2,7 @@
 /* eslint-disable no-unused-vars */
 import React, { useEffect } from "react";
 import img from "../assets/reaxt from pexel.jpg";
-import resumePdf from "../assets/Tomasz CV.pdf";
+import resumePdf from "../assets/TOMEK CV.pdf";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
