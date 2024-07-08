@@ -57,12 +57,17 @@ const About = () => {
         </p>
         <div className="flex mt-8 gap-2">
           <div className="flex items-center space-x-2">
+            <br></br>
             <button
               className="neno-button shadow-xl hover:shadow-purple-800/80 text-white border-2 hover:bg-purple-800 border-purple-700 rounded-lg py-4 px-8 uppercase relative overflow-hidden"
               onClick={handleDownloadResume}
             >
               Download Resume
             </button>
+            <br />
+            <br />
+            <br />
+            <br />
           </div>
         </div>
       </div>
