@@ -1,8 +1,8 @@
 /* eslint-disable react/no-unescaped-entities */
 /* eslint-disable no-unused-vars */
 import React, { useEffect } from "react";
-import img from "../assets/reaxt_from_pexel.jpg"; // Poprawiłem nazwę pliku obrazu
-import resumePdf from "../assets/TOMEK_CV.pdf"; // Poprawiłem nazwę pliku CV
+import img from "../assets/reaxt from pexel.jpg"; // Poprawiłem nazwę pliku obrazu
+import resumePdf from "../assets/TOMEK CV.pdf"; // Poprawiłem nazwę pliku CV
 import AOS from "aos";
 import "aos/dist/aos.css";
 
