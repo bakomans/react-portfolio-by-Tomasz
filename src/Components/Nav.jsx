@@ -1,7 +1,7 @@
 // eslint-disable-next-line no-unused-vars
 import React, { useState } from "react";
 import { Link } from "react-scroll";
-import { IoMenuOutline, IoCloseOutline } from "react-icons/io5"; // Przykładowe ikony, możesz dostosować do swoich potrzeb
+import { IoMenuOutline, IoCloseOutline } from "react-icons/io5";
 
 const Nav = () => {
   const [click, setClick] = useState(false);

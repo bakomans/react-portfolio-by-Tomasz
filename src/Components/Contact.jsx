@@ -33,10 +33,10 @@ const Contact = () => {
             user_name: userName,
             user_email: userEmail,
             message: message,
-            html: `<p>Imię nadawcy: ${userName}</p>
-                   <p>Email nadawcy: ${userEmail}</p>
+            html: `<p>Sender's Name: ${userName}</p>
+                   <p>Sender's Email: ${userEmail}</p>
                    <hr />
-                   <p>Treść wiadomości:</p>
+                   <p>Message:</p>
                    <p>${message}</p>`,
         };
 
@@ -53,10 +53,10 @@ const Contact = () => {
 
     return (
         <div id="Contact" className='p-8 md:p-20 bg-slate-900 text-center'>
-            <h1 data-aos='fade-right' className='text-2xl md:text-[53px] font-semibold mb-8 md:mb-20 leading-normal uppercase text-purple-500'>
-                Contact <span className="text-white">Me !</span>
+            <h1 data-aos='fade-right' className='text-2xl md:text-5xl font-semibold mb-8 md:mb-20 leading-normal uppercase text-purple-500'>
+                Contact <span className="text-white">Me!</span>
             </h1>
-            <form data-aos='fade-up' onSubmit={sendEmail} className="max-w-lg mx-auto bg-white p-8 rounded-lg b_glow">
+            <form data-aos='fade-up' onSubmit={sendEmail} className="max-w-lg mx-auto bg-white p-8 rounded-lg shadow-lg">
                 <div className="mb-6">
                     <input type="text" name="user_name" placeholder="Your Name" className="w-full p-3 border border-purple-300 rounded-md focus:outline-none focus:ring focus:border-purple-500 transition" />
                 </div>

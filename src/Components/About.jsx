@@ -1,8 +1,8 @@
 /* eslint-disable react/no-unescaped-entities */
 /* eslint-disable no-unused-vars */
 import React, { useEffect } from "react";
-import img from "../assets/reaxt from pexel.jpg";
-import resumePdf from "../assets/TOMEK CV.pdf";
+import img from "../assets/reaxt_from_pexel.jpg"; // Poprawiłem nazwę pliku obrazu
+import resumePdf from "../assets/TOMEK_CV.pdf"; // Poprawiłem nazwę pliku CV
 import AOS from "aos";
 import "aos/dist/aos.css";
 
@@ -10,7 +10,7 @@ const About = () => {
   const handleDownloadResume = () => {
     const link = document.createElement("a");
     link.href = resumePdf;
-    link.download = "Tomasz CV";
+    link.download = "Tomasz_CV.pdf"; // Poprawiłem nazwę pliku CV
     link.click();
   };
 
@@ -35,17 +35,17 @@ const About = () => {
           width={1000}
           height={600}
           className="rounded-full"
-          alt="Photo from pexels Thank You"
+          alt="Photo from Pexels"
         />
       </div>
       <div className="h-full lg:py-40 flex flex-col justify-center lg:items-start items-center text-white">
         <h1
           data-aos="fade-right"
-          className="text-[52px] font-semibold mb-8 leading-normal uppercase"
+          className="text-5xl lg:text-[52px] font-semibold mb-8 leading-normal uppercase"
         >
           <span className="text-purple-500">About </span> Me
         </h1>
-        <p data-aos="fade-left">
+        <p data-aos="fade-left" className="text-lg lg:text-xl">
           "Hi there! My name is Tomasz, and I'm a 35-year-old aspiring Front-End
           Developer with a passion for creating beautiful and responsive web
           applications. I've completed various front-end courses and even
@@ -53,22 +53,15 @@ const About = () => {
           in bringing designs to life and crafting user-friendly interfaces. My
           journey into web development has been exciting, and I'm always eager
           to learn and explore new technologies to stay on top of the
-          ever-evolving world of web development. "
+          ever-evolving world of web development."
         </p>
         <div className="flex mt-8 gap-2">
-          <div className="flex items-center space-x-2">
-            <br></br>
-            <button
-              className="neno-button shadow-xl hover:shadow-purple-800/80 text-white border-2 hover:bg-purple-800 border-purple-700 rounded-lg py-4 px-8 uppercase relative overflow-hidden"
-              onClick={handleDownloadResume}
-            >
-              Download Resume
-            </button>
-            <br />
-            <br />
-            <br />
-            <br />
-          </div>
+          <button
+            className="neno-button shadow-xl hover:shadow-purple-800 text-white border-2 hover:bg-purple-800 border-purple-700 rounded-lg py-4 px-8 uppercase relative overflow-hidden"
+            onClick={handleDownloadResume}
+          >
+            Download Resume
+          </button>
         </div>
       </div>
     </div>
