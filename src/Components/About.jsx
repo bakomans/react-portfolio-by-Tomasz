@@ -2,7 +2,7 @@
 /* eslint-disable no-unused-vars */
 import React, { useEffect } from "react";
 import img from "../assets/reaxt from pexel.jpg"; // Poprawiłem nazwę pliku obrazu
-import resumePdf from "../assets/TOMEK CV.pdf"; // Poprawiłem nazwę pliku CV
+import resumePdf from "../assets/TOMEK CV.pdf"; 
 import AOS from "aos";
 import "aos/dist/aos.css";
 
@@ -10,7 +10,7 @@ const About = () => {
   const handleDownloadResume = () => {
     const link = document.createElement("a");
     link.href = resumePdf;
-    link.download = "Tomasz_CV.pdf"; // Poprawiłem nazwę pliku CV
+    link.download = "TomaszCV.pdf"; 
     link.click();
   };
 
