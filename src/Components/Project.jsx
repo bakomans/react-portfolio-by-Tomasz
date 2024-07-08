@@ -5,7 +5,8 @@ import { SiGithub } from 'react-icons/si';
 import img1 from '../assets/image.png';
 import img2 from '../assets/pro2.png';
 import img3 from '../assets/pro3.png';
-import img4 from '../assets/pro4.png';
+import imgCGiStudio from '../assets/cgistudio.png'; 
+
 
 const Projects = () => {
     useEffect(() => {
@@ -27,10 +28,10 @@ const Projects = () => {
             </div>
             <div className='grid md:grid-cols-2 grid-cols-1 gap-8 md:gap-20'>
                 {[
-                    { img: img1, title: 'Foodie Mate', description: 'Please find this project on github.', link: 'https://github.com/bakomans/restaurant-explorer-By-Group-8' },
-                    { img: img2, title: 'Calculator', description: 'Please find this project on github', link: 'https://github.com/bakomans/project_calc_for_portfolio' },
-                    { img: img3, title: 'Scheduler', description: 'Please find this project on github', link: 'https://github.com/bakomans/Dynamic-Calendar-is-amazing' },
-                    { img: img4, title: 'Weather App', description: 'Please find this project on github', link: 'https://github.com/bakomans/weather-app-by-bakomans-' },
+                    { img: img1, title: 'Foodie Mate', description: 'Please find this project on GitHub.', link: 'https://github.com/bakomans/restaurant-explorer-By-Group-8' },
+                    { img: img2, title: 'Calculator', description: 'Please find this project on GitHub.', link: 'https://github.com/bakomans/project_calc_for_portfolio' },
+                    { img: img3, title: 'Scheduler', description: 'Please find this project on GitHub.', link: 'https://github.com/bakomans/Dynamic-Calendar-is-amazing' },
+                    { img: imgCGiStudio, title: 'CGiStudio', description: 'Please find this project on GitHub.', link: 'https://cg-istudio.netlify.app' }, // Zaktualizowany projekt na CGiStudio
                 ].map((project, index) => (
                     <div key={index} data-aos='zoom-in' data-aos-delay={index * 200} className='relative overflow-hidden rounded-lg b_glow2 group mb-8 md:mb-0'>
                         <img className='w-full h-44 md:h-72 object-cover transform transition-transform group-hover:scale-105' src={project.img} alt={project.title} />
@@ -55,6 +56,3 @@ const Projects = () => {
 };
 
 export default Projects;
-
-
-
