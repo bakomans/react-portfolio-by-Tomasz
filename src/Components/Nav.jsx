@@ -1,3 +1,4 @@
+// eslint-disable-next-line no-unused-vars
 import React, { useState } from 'react';
 import { Link } from 'react-scroll';
 import { IoMenuOutline, IoCloseOutline } from 'react-icons/io5';
@@ -13,6 +14,7 @@ const Nav = () => {
     <nav className="fixed top-0 w-full z-50">
       <div className="h-16 flex items-center justify-between z-50 text-white bg-gray-800 px-8 lg:px-20 py-4 border-b border-gray-700">
         <div className="text-3xl font-bold">Tomasz Bachula Portfolio</div>
+        <br />
         <div className="hidden lg:flex items-center space-x-8">
           <Link
             to="Home"
