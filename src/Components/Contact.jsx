@@ -17,15 +17,26 @@ const Contact = () => {
     const sendEmail = (e) => {
         e.preventDefault();
 
+        // Validate form inputs
+        const userName = e.target.user_name.value;
+        const userEmail = e.target.user_email.value;
+        const message = e.target.message.value;
+
+        if (!userName || !userEmail || !message) {
+            setMessageStatus('error');
+            console.log("All fields are required.");
+            return;
+        }
+
         const templateParams = {
-            user_name: e.target.user_name.value,
-            user_email: e.target.user_email.value,
-            message: e.target.message.value,
-            html: `<p>Imię nadawcy: ${e.target.user_name.value}</p>
-                   <p>Email nadawcy: ${e.target.user_email.value}</p>
+            user_name: userName,
+            user_email: userEmail,
+            message: message,
+            html: `<p>Imię nadawcy: ${userName}</p>
+                   <p>Email nadawcy: ${userEmail}</p>
                    <hr />
                    <p>Treść wiadomości:</p>
-                   <p>${e.target.message.value}</p>`,
+                   <p>${message}</p>`,
         };
 
         emailjs.send('service_swczu16', 'template_vheafej', templateParams, 'tb1oBuZHji2vqlqRA')
@@ -61,7 +72,7 @@ const Contact = () => {
                     <p className="text-green-500 mt-3">Thank you! Your message has been sent successfully.</p>
                 )}
                 {messageStatus === 'error' && (
-                    <p className="text-red-500 mt-3">Oops! Something went wrong. Please try again later.</p>
+                    <p className="text-red-500 mt-3">Oops! Something went wrong. Please fill all fields and try again later.</p>
                 )}
             </form>
         </div>
